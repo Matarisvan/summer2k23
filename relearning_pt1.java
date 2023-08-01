@@ -47,8 +47,21 @@ public class Relearning_pt1 {
         System.out.println(miDub);
         System.out.println(intToDub);
         
-        
+        System.out.println();
+
+        //Java string length
+        String hokage = "uzumaki minato";
+        System.out.println(hokage + " hokage.length() characters = " + hokage.length());
+        System.out.println(hokage.toUpperCase());
+        System.out.println(hokage.toLowerCase());
+        System.out.println(hokage.indexOf("min"));
+
+
+        System.out.println();
         System.out.println("thank you\n");
+
+
+        
     }
     
 }
