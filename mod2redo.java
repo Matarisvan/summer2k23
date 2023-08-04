@@ -18,6 +18,14 @@ public class mod2redo {
         //import scanner
         try (Scanner userInput = new Scanner(System.in)) {
 
+            //variables to be used
+            double Q;
+            double waterMass;
+            double finalTemp;
+            double initTemp;
+            int consTemp = 4184;
+            
+            
             //intro to assignment
             System.out.println("\nMod 2 Redo - Water Heater Energy\nType something:  ");
             String answer;
