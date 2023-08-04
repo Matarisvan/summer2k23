@@ -3,7 +3,7 @@
  * code and tutorial on w3schools.com
 */
 
-public class Relearning_pt1 {
+public class relearning_pt1 {
     public static void main(String[] args) {
         System.out.println("\nHola Mundo bello!");
         System.out.print("Hello everyone! ");
