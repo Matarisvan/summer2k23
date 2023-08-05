@@ -27,16 +27,21 @@ public class mod2redo {
             
             
             //intro to assignment
-            System.out.println("\nMod 2 Redo - Water Heater Energy\nType something:  ");
-            String answer;
-            answer = userInput.nextLine();
-            System.out.println("you chose " + answer);
+            System.out.println("\nMod 2 Redo - Water Heater Energy\n\nHow much water are you heating up in kg?");
+            
+            //collecting variable information
+            waterMass = userInput.nextDouble();
+            System.out.println("What is your water's current temperature in Celsius?");
+            initTemp = userInput.nextDouble();
+            System.out.println("What is your water's desired temperature in Celsius?");
+            finalTemp = userInput.nextDouble();
+            System.out.println("\nWater Mass: " + waterMass + "\ninitTemp = " + initTemp + "\nfinalTemp = " + finalTemp);
+
+            //equation
+            Q = waterMass * (finalTemp - initTemp) * consTemp;
+            System.out.println("\nYou need " + Q + " Joules of energy");
 
         }
-
-
-        
-
     System.out.println("\nGracias!\n");
     }    
 }
