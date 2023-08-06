@@ -5,9 +5,27 @@ Then, the program is to prompt the user to enter a value of 1, 2, or 3.
 Next, the program displays a clear readable message displaying both the computer’s selection, the user’s selection, and the results.
 */
 
+import java.util.Scanner;
+
 public class mod3redo {
     public static void main(String[] args) {
+        try (Scanner userInput = new Scanner(System.in)) {
 
+            // Variables
+            String rock = "1";
+            String paper = "2";
+            String scissors = "3";
+
+            //cpu selection
+
+
+            //user selection
+            System.out.println("\nRock = 1\nPaper = 2\nScissors = 3\nSelect an option:");
+            
+            //results
+            
+            
+        }
+        System.out.println("\nThank you very mucho mis friends\n");
     }
-    
 }
