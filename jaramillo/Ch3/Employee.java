@@ -12,7 +12,7 @@ public class Employee {
     public int getEmpNum() {
         return empNum;
     }
-    public void setEmpNum(int setEmp) {s
+    public void setEmpNum(int setEmp) {
         empNum = setEmp;
     }
     public String getEmpLN() {
