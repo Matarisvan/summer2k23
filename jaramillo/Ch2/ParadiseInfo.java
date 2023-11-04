@@ -1,4 +1,4 @@
-package jaramillo;
+package jaramillo.Ch2;
 
 
 public class ParadiseInfo {
