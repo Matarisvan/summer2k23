@@ -1,3 +1,4 @@
+package Redo;
 /* 
  * purpose of this is to relearn previous basic knowledge of java 
  * code and tutorial on w3schools.com

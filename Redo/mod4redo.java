@@ -1,3 +1,4 @@
+package Redo;
 /*
  Write a program that prompts a user to enter two strings and then checks the strings entered
  and reports if either the first string is a substring of the second string, 

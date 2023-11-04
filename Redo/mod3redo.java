@@ -1,3 +1,4 @@
+package Redo;
 /*
 Write a program that is similar to the popular game titled “Rock-Paper-Scissors.”
 The program randomly generates the number of 1, 2, or 3 with 1 being Rock, 2 being Paper, and 3 being Scissors.
