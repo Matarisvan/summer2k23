@@ -15,7 +15,35 @@ Please submit the source code for your program along with a word document that i
 
 package jaramillo.Ch3;
 
-public class CraftPricing {
+import java.util.Scanner;
 
-    
+public class CraftPricing {
+    public static void main(String[] args) {
+
+        // import Scanner package
+        Scanner input = new Scanner(System.in);
+        
+        // welcome message
+        System.out.println("\nChapter 3 Assignment- Craft Pricing\n");
+
+        // fields
+        double retailPrice;
+        double matCost;
+        double workHours;
+
+        System.out.println("What item would you like to purchase?");
+        String item = input.nextLine();
+        System.out.print("Cost of Materials: $");
+        matCost = input.nextDouble();
+        System.out.print("Hours of work required: ");
+        workHours = input.nextDouble();
+
+        // formulas
+        retailPrice = .75 * (matCost + (14 * workHours)) + 6;
+
+        // user output
+        System.out.println("\nYou chose to purchase a \'" + item + "\'\nCost of Materials: $" + matCost + "\nHours of Work Required: " + workHours + "\nFinal Price: $" + retailPrice);
+
+        input.close();  
+    }     
 }
