@@ -1,9 +1,12 @@
 package jaramillo.Ch3;
 
 public class SpaService {
+    
+    // private fields
     private String serviceDesc;
     private double price;
 
+    // get set methods
     public String getServiceDesc() {
         return serviceDesc;
     }
