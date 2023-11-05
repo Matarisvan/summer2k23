@@ -42,7 +42,7 @@ public class CraftPricing {
         retailPrice = .75 * (matCost + (14 * workHours)) + 6;
 
         // user output
-        System.out.println("\nYou chose to purchase a \'" + item + "\'\nCost of Materials: $" + matCost + "\nHours of Work Required: " + workHours + "\nFinal Price: $" + retailPrice);
+        System.out.println("\nYou chose to purchase a \'" + item + "\'\nCost of Materials: $" + matCost + "\nHours of Work Required: " + workHours + "\nFinal Price: $" + retailPrice + "\n");
 
         input.close();  
     }     
