@@ -25,6 +25,8 @@ public class mod3redo {
                 int scissors = 3;
                 int cpuSel;
                 int userSel = 0;
+                String userAnswer = "";
+                String cpuAnswer;
                 int loop = 0;
                 int replay = 0;
                 String replayAnswer;
@@ -36,16 +38,19 @@ public class mod3redo {
                     if (userSelection.equalsIgnoreCase("1")) {
                         System.out.println("You have chosen Rock!");
                         userSel = rock;
+                        userAnswer = "Rock";
                         loop++;
                         break;
                     }else if(userSelection.equalsIgnoreCase("2")) {
                         System.out.println("You have chosen Paper!");
                         userSel = paper;
+                        userAnswer = "Paper";
                         loop++;
                         break;
                     }else if(userSelection.equalsIgnoreCase("3")) {
                         System.out.println("You have chosen Scissors!");
                         userSel = scissors;
+                        userAnswer = "Scissors";
                         loop++;
                         break;
                     }else {
@@ -56,10 +61,17 @@ public class mod3redo {
                 
                 //cpu selection
                 cpuSel = (int)(Math.random() * 3) + 1;
-                System.out.println("Cpu has chosen " + cpuSel);
+                if (cpuSel == 1) {
+                    cpuAnswer = "Rock!";
+                } else if (cpuSel == 2) {
+                    cpuAnswer = "Paper!";
+                } else {
+                    cpuAnswer = "Scissors!";
+                }
+                System.out.println("Cpu has chosen " + cpuAnswer);
                 
                 //results
-                System.out.println("You chose " + userSel + " and cpu chose " + cpuSel);
+                System.out.println("You chose " + userAnswer + " and cpu chose " + cpuAnswer);
                 while (loop == 1) {
                     if (userSel == cpuSel) {
                         System.out.println("\nTIE\n");
