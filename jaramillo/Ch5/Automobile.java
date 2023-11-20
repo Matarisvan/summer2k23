@@ -27,14 +27,14 @@ public class Automobile {
     private int year;
     private int vinNumber;
     private int mpg;
-    private int speed = 0;
+    private int speed;
 
     //get and set methods
     public int getIdNumber() {
         return idNumber;
     }
     public void setIdNumber(int setId) {
-        if (setId >= 0 & setId <= 9999)  {
+        if (setId >= 0 && setId <= 9999)  {
             idNumber = setId;
         } else {
             idNumber = 0;
@@ -79,7 +79,7 @@ public class Automobile {
         return mpg;
     }
     public void setMpg(int setMpg) {
-        if (setMpg >= 10 & setMpg <= 60) {
+        if (setMpg >= 10 && setMpg <= 60) {
             mpg = setMpg;
         } else {
             mpg = 0;
@@ -106,16 +106,16 @@ public class Automobile {
 
     // display method
     public void displayAutomobile() {
-        System.out.println("\nID Number: " + this.idNumber + "\nMake: " + this.make + "\nModel: " + this.model + "\nColor: " + this.color + "\nYear: " + this.year + "\nVIN: " + this.vinNumber + "\nMPG: " + this.mpg + "\nCurrent Speed: " + this.speed);
+        System.out.println("\nID Number: " + idNumber + "\nMake: " + make + "\nModel: " + model + "\nColor: " + color + "\nYear: " + year + "\nVIN: " + vinNumber + "\nMPG: " + mpg + "\nCurrent Speed: " + speed);
     }
 
     // Accelerate and Break Methods
-    public String accelerate() {
-        speed =+ 5;
-        return "Speed is now " + speed + "mpg";
+    public void accelerate(int speed) {
+        speed += 5;
+        System.out.println("Speed is now " + speed + "mpg\n");
     }
-    public String brake() {
+    public void brake(int speed) {
         speed -= 5;
-        return "Speed is now " + speed + "mpg";
+        System.out.println("Speed is now " + speed + "mpg\n");
     }
 }
