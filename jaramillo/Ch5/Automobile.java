@@ -39,7 +39,6 @@ public class Automobile {
         } else {
             idNumber = 0;
         }
-        
     }
     public String getMake() {
         return make;
