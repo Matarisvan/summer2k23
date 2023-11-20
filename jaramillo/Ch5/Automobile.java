@@ -110,12 +110,26 @@ public class Automobile {
     }
 
     // Accelerate and Break Methods
-    public void accelerate(int speed) {
-        speed += 5;
-        System.out.println("Speed is now " + speed + "mpg\n");
+    public void accelerate(int x) {
+        x += 5;
+        System.out.println(make + " " + model + " speed is now " + x + "mpg\n");
     }
-    public void brake(int speed) {
-        speed -= 5;
-        System.out.println("Speed is now " + speed + "mpg\n");
+    public void accelerate(double x) {
+        x += 5;
+        System.out.println(make + " " + model + " speed is now " + x + "mpg\n");
+    }
+    public void brake(int x) {
+        x -= 5;
+        if (x < 0) {
+            speed = 0;
+        }
+        System.out.println(make + " " + model + " speed is now " + x + "mpg\n");
+    }
+    public void brake(double x) {
+        x -= 5;
+        if (x < 0) {
+            speed = 0;
+        }
+        System.out.println(make + " " + model + " speed is now " + x + "mpg\n");
     }
 }

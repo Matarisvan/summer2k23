@@ -38,7 +38,11 @@ public class TestAutomobiles {
         carFour.displayAutomobile();
 
         // accelerate and brake
-        
+        System.out.println("");
+        carOne.accelerate(21);
+        carOne.accelerate(21.5);    
+        carOne.brake(21);
+        carOne.brake(21.5);
         
 
 
