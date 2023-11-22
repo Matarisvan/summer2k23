@@ -14,5 +14,14 @@ Zaguate - Please submit the source code for your program along with a word docum
 package jaramillo.Ch6;
 
 public class Population_while {
+
+    // fields
+    double mexico = 121000000;
+    double mexRate = 1.0105;
+    double usa = 315000000;
+    double usaRate = .9984;
+    double japan = 127000000;
+    double japRate = 1.0101;
+    
     
 }
