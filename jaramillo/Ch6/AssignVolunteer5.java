@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class AssignVolunteer5{
     public static void main(String[] args) {
-        //Scanner
+        // Scanner
         Scanner input = new Scanner(System.in);
 
-        //Variables
+        // Variables
         int donationType;
         String volunteer;
         String message;
@@ -20,10 +20,17 @@ public class AssignVolunteer5{
         final String ELECTRONICS_PRICER = "Lydia";
         final String OTHER_PRICER = "Marco";
 
-        //Outputs
+        // User Input
         System.out.println("What type of donation is this?");
         System.out.print("Enter an integer... " ); 
         donationType = input.nextInt();
+
+        // loop statement
+        while (donationType < CLOTHING_CODE || donationType > OTHER_CODE) {
+            System.out.println("You enterd " + donationType + " which is not a valid donation type");
+            System.out.print("Please enter a value between " + CLOTHING_CODE + " and " + OTHER_CODE + "... ");
+            donationType = input.nextInt();
+        }
 
         // Switch Statements
         switch (donationType) {
@@ -53,7 +60,7 @@ public class AssignVolunteer5{
             }
         }
 
-        //Outputs
+        // Outputs
         System.out.println("You entered " + donationType); 
         System.out.println("The volunteer who will price this item is " + volunteer);
         System.out.println("This is " + message);
