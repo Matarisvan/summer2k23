@@ -33,7 +33,7 @@ public class Population_while {
         japPop = japan * japRate;
         System.out.println("\nYear " + year + "\nUSA Population: " + usaPop + "\nMexico Population: " + mexPop + "\nJapan Population: " + japPop);
 
-        // output
+        // while loop
         while (usaPop > mexPop || usaPop > japPop) {            
             mexPop *= mexRate;
             usaPop *= usaRate;
