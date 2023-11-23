@@ -41,6 +41,5 @@ public class Population_while {
             year++;
             System.out.println("\nYear " + year + "\nUSA Population: " + usaPop + "\nMexico Population: " + mexPop + "\nJapan Population: " + japPop);
         }
-        
     } 
 }
