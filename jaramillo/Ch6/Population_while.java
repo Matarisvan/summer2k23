@@ -14,14 +14,33 @@ Zaguate - Please submit the source code for your program along with a word docum
 package jaramillo.Ch6;
 
 public class Population_while {
+    public static void main(String[] args) {
+        // fields
+        double mexico = 121000000;
+        double mexRate = 1.0105;
+        double mexPop;
+        double usa = 315000000;
+        double usaRate = .9984;
+        double usaPop;
+        double japan = 127000000;
+        double japRate = 1.0101;
+        double japPop;
+        int year = 1;
 
-    // fields
-    double mexico = 121000000;
-    double mexRate = 1.0105;
-    double usa = 315000000;
-    double usaRate = .9984;
-    double japan = 127000000;
-    double japRate = 1.0101;
-    
-    
+        // equations
+        mexPop = mexico * mexRate;
+        usaPop = usa * usaRate;
+        japPop = japan * japRate;
+        System.out.println("\nYear " + year + "\nUSA Population: " + usaPop + "\nMexico Population: " + mexPop + "\nJapan Population: " + japPop);
+
+        // output
+        while (usaPop > mexPop || usaPop > japPop) {            
+            mexPop *= mexRate;
+            usaPop *= usaRate;
+            japPop *= japRate;
+            year++;
+            System.out.println("\nYear " + year + "\nUSA Population: " + usaPop + "\nMexico Population: " + mexPop + "\nJapan Population: " + japPop);
+        }
+        
+    } 
 }
