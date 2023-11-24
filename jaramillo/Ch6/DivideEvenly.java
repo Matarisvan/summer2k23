@@ -1,3 +1,5 @@
+package jaramillo.Ch6;
+
 public class DivideEvenly {
     public static void main(String[] args) {
         
