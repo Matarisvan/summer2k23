@@ -16,7 +16,6 @@ public class BankBalance2 {
         // asking for user input
         System.out.print("Enter initial bank balance >> ");
         balance = input.nextDouble();
-        input.nextLine();
 
         // do while loop
         do {
