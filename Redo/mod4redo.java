@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class mod4redo {
     public static void main(String[] args) {
-        try (Scanner input = new Scanner(System.in)) {
+        Scanner input = new Scanner(System.in);
 
         //welcome message
         System.out.println("\nWelcome to mod 4 redo\nyou will type 2 lines of text and see if one is within the other\n");
@@ -40,8 +40,9 @@ public class mod4redo {
         }
             
 
-        }
+        
 
         System.out.println("\nGracias amigos\n");
+        input.close();
     }
 }
