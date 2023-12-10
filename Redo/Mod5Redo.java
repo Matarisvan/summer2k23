@@ -22,7 +22,6 @@ public class Mod5Redo {
         int mainAns = 0;
         String progAns;
         String loopAns;
-
         
         do {
             System.out.println("\nThere are 2 equations:");          
@@ -57,11 +56,10 @@ public class Mod5Redo {
         } while (program == 0);
 
         System.out.println("\nArigatouuuuuuuuuuuuu!!!\n");
-
         input.close();
     }
     
-    // equation 1 method
+    // equation 1 method with "for loop"
     public static void equationOne() {
         double denominator;
         double numerator = 1;
@@ -72,7 +70,7 @@ public class Mod5Redo {
         }
     }
 
-    // equation 2 method
+    // equation 2 method with "while loop"
     public static void equationTwo(){
         double denominator = 99;
         double numerator = 1;
@@ -83,6 +81,4 @@ public class Mod5Redo {
             denominator -= 2;
         }
     }
-
-
 }
